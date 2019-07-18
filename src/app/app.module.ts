@@ -8,12 +8,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StatistikaComponent } from './statistika/statistika.component';
 import { GodineComponent } from './godine/godine.component';
+import { UpustvaComponent } from './upustva/upustva.component';
+import { KontaktComponent } from './kontakt/kontakt.component';
+import { KnjigeComponent } from './knjige/knjige.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StatistikaComponent,
-    GodineComponent
+    GodineComponent,
+    UpustvaComponent,
+    KontaktComponent,
+    KnjigeComponent
   ],
   imports: [
     BrowserModule,

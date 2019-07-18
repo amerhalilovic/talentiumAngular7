@@ -1,12 +1,3 @@
-ul {
-    font-size: 2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-}
-
-ul li:hover {
-    background: silver;
-}
-
 p {
     font-size: 1.5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;

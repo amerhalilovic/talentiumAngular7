@@ -1,0 +1,61 @@
+ul {
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+ul li:hover {
+    background: silver;
+}
+
+p {
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+h1 {
+    font-size: 2.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+}
+
+#lokacija {
+    margin-top: 1rem;
+    background: url(http://radioberane.me/wp-content/uploads/2019/03/lokacija.jpg);
+    width: 400px;
+    height: 400px;
+    display: block;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+#kontaktDiv {
+    margin-top: 0.6rem;
+    /* background: url(http://www.wjaanh.org/wp-content/uploads/2018/11/contact-overview-1.png); */
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+#kontaktDiv p {
+    font-size: 1.9rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#lokacija p {
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

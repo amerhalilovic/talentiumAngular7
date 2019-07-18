@@ -1,27 +1,25 @@
-<body id="page-top">
+<body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">Talentium</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#projects">Klokan-Matematicar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#signup">Dabar-Informaticar</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+
+    <nav class="nav justify-content-center" id="navigacijaOdRoota" style="height: 4rem;">
+
+        <!-- <a class="navbar-brand text-lg-left" href="#page-top">Talentium</a> -->
+        <li class="nav-item">
+            <a class="nav-link " style="font-family:'Century Gothic'; font-size:1.8rem; color:whitesmoke; display: inline;" href="#about">ABOUT</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " style="font-family:'Century Gothic'; font-size:1.8rem; color:whitesmoke; display: inline;" href="#projects">KLOKAN-MATEMATICAR</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="#signup" style="font-family:'Century Gothic'; font-size:1.8rem; color:whitesmoke; display: inline;">DABAR-INFORMATICAR</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link " href="#knjige" style="font-family:'Century Gothic'; font-size:1.8rem; color:whitesmoke; display: inline;">KNJIGE</a>
+        </li>
+
+
     </nav>
 
     <!-- Header -->
@@ -34,18 +32,7 @@
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="about-section text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h2 class="text-white mb-4">Talentium</h2>
-                    <p class="text-white-50">Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template o.</p>
-                </div>
-            </div>
-            <img src="../assets/img/ipad.png" class="img-fluid" alt="">
-        </div>
-    </section>
+
 
     <!-- Projects Section -->
     <section id="projects" class="projects-section bg-light">
@@ -54,20 +41,32 @@
             <!-- Featured Project Row -->
             <div class="row align-items-center no-gutters mb-4 mb-lg-5" id="divonja">
                 <div>
-                    <a class="nav-link" routerLink="/statistika">
-                        <p>STATISTIKA</p>
-                    </a>
+                    <nav class="nav justify-content-center" id="navigacijaOdRoota">
+                        <a class="nav-link" style="font-family:'Century Gothic'; font-size:1.5rem; color:white; display: inline;" routerLink="/kategorije">
+                            <p>KATEGORIJE</p>
+                        </a>
+                        <a class="nav-link" style="font-family:'Century Gothic'; font-size:1.5rem; color:white; display: inline;" routerLink="/upustva">
+                            <p>UPUSTVA</p>
+                        </a>
+                        <a class="nav-link" style="font-family:'Century Gothic'; font-size:1.5rem; color:whitesmoke; display: inline;" routerLink="/kontakt">
+                            <p>PRIJAVA</p>
+                        </a>
+                        <a class="nav-link" style="font-family:'Century Gothic'; font-size:1.5rem; color:whitesmoke; display: inline; " routerLink="/statistika">
+                            <p>STATISTIKA</p>
+                        </a>
+                    </nav>
+                    <br>
                     <router-outlet></router-outlet>
                 </div>
             </div>
 
-
+            <br><br>
 
 
             <!-- Project One Row -->
             <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
                 <div class="col-lg-6">
-                    <img class="img-fluid" src="http://os-kiseljak.ba/images/%C5%A1kolska_1718/dabar_informaticar_17/Untitled.jpg" alt="">
+                    <img class="img-fluid" src="https://www.dabar-informaticar.ba/assets/img/dabarLogo.png" alt="">
 
                     <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyXlHIIuc0ey9Rb1ZED9nd4xskKsoYSsWxqUaIgeBW3808iFZycw" class="img-fluid" alt=""> -->
                 </div>
@@ -75,8 +74,8 @@
                     <div class="bg-black text-center h-100 project">
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-left">
-                                <h4 id="klok" class="text-white">Dabar Informatičar</h4>
-                                <p id="klokText" class="mb-0 text-white-50">Dabar Informatičar izazov je međunarodno takmičenje koje se održava svake godine u više od 50 zemalja svijeta uz učešće više od 2 miliona učenika osnovnih i srednjih škola.Dabar Informatičar izazov ima za cilj promociju
+                                <h4 id="klok" class="text-white" style="font-family:'Century Gothic'; font-size:2.5rem; color:whitesmoke; display: block;">Dabar Informatičar</h4>
+                                <p id="klokText" class="mb-0 text-white-50" style=" font-family:'Century Gothic'; font-size:1.5rem; color:whitesmoke; display: inline;">Dabar Informatičar izazov je međunarodno takmičenje koje se održava svake godine u više od 50 zemalja svijeta uz učešće više od 2 miliona učenika osnovnih i srednjih škola.Dabar Informatičar izazov ima za cilj promociju
                                     Informatike u svakodnevnom životu, ali i da predstavi Informatiku kao naučnu disciplinu i moguće buduće zanimanje</p>
                                 <hr class="d-none d-lg-block mb-0 ml-0">
                             </div>
@@ -91,13 +90,13 @@
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block w-100" src="http://bit-alliance.ba/wp-content/uploads/2018/02/IUS_1365.jpg" alt="First slide">
+                                <img class="d-block w-100" src="http://bit-alliance.ba/wp-content/uploads/2018/02/IUS_1365.jpg" alt="First slide" height="370px">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="http://bit-alliance.ba/wp-content/uploads/2018/02/IUS_1421.jpg" alt="Second slide">
+                                <img class="d-block w-100" src="http://bit-alliance.ba/wp-content/uploads/2018/02/IUS_1421.jpg" alt="Second slide" height="370px">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="https://storage.radiosarajevo.ba/image/398310/1180x732/dabar_informaticar5.JPG" alt="Third slide">
+                                <img class="d-block w-100" src="https://storage.radiosarajevo.ba/image/398310/1180x732/dabar_informaticar5.JPG" alt="Third slide" height="370px">
                             </div>
                         </div>
                     </div>
@@ -107,7 +106,7 @@
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-right">
                                 <!-- <h4 class="text-white">Mountains</h4> -->
-                                <p class="mb-0 text-white-50" id="klokText">Izazov pruža priliku svima za jedan novi susret sa informatikom u svakodnevnom životu i informatikom kao naučnom disciplinom. Izazov također pomaže da učenici upoznaju sebe, svoje skrivene talente i mogućnosti, te da razviju
+                                <p style="font-family:'Century Gothic'; font-size:1.5rem; color:whitesmoke; display: inline; " class="mb-0 text-white-50 text-center" id="klokText">Izazov pruža priliku svima za jedan novi susret sa informatikom u svakodnevnom životu i informatikom kao naučnom disciplinom. Izazov također pomaže da učenici upoznaju sebe, svoje skrivene talente i mogućnosti, te da razviju
                                     svoje komputaciono razmišljanje</p>
                                 <hr class="d-none d-lg-block mb-0 mr-0">
                                 <form action="https://www.dabar-informaticar.ba/" style="margin-top:10px;">
@@ -120,6 +119,15 @@
             </div>
         </div>
     </section>
+
+
+    <section id="knjige" class="projects-section bg-light ">
+
+        <app-knjige></app-knjige>
+
+
+    </section>
+
 
     <!-- Signup Section -->
     <section id="signup" class="signup-section">
@@ -150,9 +158,9 @@
                     <div class="card py-4 h-100">
                         <div class="card-body text-center">
                             <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Adresa </h4>
+                            <h4 class="text-uppercase m-0" style="font-size:1.5rem;">Adresa </h4>
                             <hr class="my-4">
-                            <div class="small text-black-50">72000 Sarajevo</div>
+                            <a href="#" style="font-size:1.3rem;">72000 Sarajevo</a>
                         </div>
                     </div>
                 </div>
@@ -161,10 +169,10 @@
                     <div class="card py-4 h-100">
                         <div class="card-body text-center">
                             <i class="fas fa-envelope text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Email</h4>
+                            <h4 class="text-uppercase m-0" style="font-size:1.5rem;">Email</h4>
                             <hr class="my-4">
-                            <div class="small text-black-50">
-                                <a href="#">talentium@gmail.com</a>
+                            <div class="">
+                                <a href="#" style="font-size:1.3rem;"> talentium@gmail.com</a>
                             </div>
                         </div>
                     </div>
@@ -174,9 +182,9 @@
                     <div class="card py-4 h-100">
                         <div class="card-body text-center">
                             <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Tel</h4>
+                            <h4 class="text-uppercase m-0" style="font-size:1.5rem;">Tel</h4>
                             <hr class="my-4">
-                            <div class="small text-black-50">+ 387 33 556 456</div>
+                            <a href="#" style="font-size:1.3rem;">+ 387 33 556 456</a>
                         </div>
                     </div>
                 </div>

@@ -1,16 +1,31 @@
-//Install express server
 const express = require('express');
-const path = require('path');
+const bodyParser = require('body-parser');
+const cors = require('cors')
+const PORT = 3000
+const mongoose = require('mongoose');
+const db = "mongodb://uservishwas:Amer1206@ds151247.mlab.com:51247/talentium"
 
-const app = express();
 
-// Serve only the static files form the dist directory
-app.use(express.static(__dirname + '/dist/<name-of-app>'));
+// const api = require('./routes/api')
+const app = express()
+app.use(cors())
 
-app.get('/*', function(req,res) {
-    
-res.sendFile(path.join(__dirname+'/dist/<name-of-app>/index.html'));
-});
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+// app.use('/api', api)
 
-// Start the app by listening on the default Heroku port
-app.listen(process.env.PORT || 8080);
+app.get('/', function (req, res) {
+    res.send('Hello from server')
+})
+
+app.listen(PORT, function () {
+    console.log('Server runnging on localost:' + PORT)
+})
+
+mongoose.connect(db, err => {
+    if (err) {
+      console.error('Error! ' + err)
+    } else {
+      console.log('Connected to mongoose')
+    }
+  })
